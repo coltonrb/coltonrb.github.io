@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
     <title>Wordle - A daily word game</title>
@@ -102,16 +104,34 @@
     </style>
   </head>
   <body>
-    <script>
-      (function () {
-        // Defining the hash before the main bundle allows the bundle access window.hash
-        window.wordle = window.wordle || {};
-        window.wordle.hash = 'e65ce0a5';
-      })();
-    </script>
-    <script src="./assets/main.e65ce0a5.js"></script>
-    <game-app></game-app>
-    <a href="/not-wordle-stats.htm">Set stats</a>
-  
+    <script src="./assets/stats.js"></script>
+    <h4>Basic stats</h4>
+    <label for="gamesPlayed">Games played:</label>
+    <input type="number" id="gamesPlayed" name="gamesPlayed"><br>
+    <label for="winPercentage">Win percentage:</label>
+    <input type="number" id="winPercentage" name="winPercentage"><br>
+    <label for="currentStreak">Current streak:</label>
+    <input type="number" id="currentStreak" name="currentStreak"><br>
+    <label for="maxStreak">Max streak:</label>
+    <input type="number" id="maxStreak" name="maxStreak">
+    <br>
+    <h4>Guess stats</h4>
+    <label for="guesses_1">1 guess:</label>
+    <input type="number" id="guesses_1" name="guesses_1"><br>
+    <label for="guesses_2">2 guesses:</label>
+    <input type="number" id="guesses_2" name="guesses_2"><br>
+    <label for="guesses_3">3 guesses:</label>
+    <input type="number" id="guesses_3" name="guesses_3"><br>
+    <label for="guesses_4">4 guesses:</label>
+    <input type="number" id="guesses_4" name="guesses_4"><br>
+    <label for="guesses_5">5 guesses:</label>
+    <input type="number" id="guesses_5" name="guesses_5"><br>
+    <label for="guesses_6">6 guesses:</label>
+    <input type="number" id="guesses_6" name="guesses_6"><br>
+    <br>
+    <button type="button" onclick="setStats()">Set stats</button>
+    
 
-</body></html>
+
+  </body>
+</html>
