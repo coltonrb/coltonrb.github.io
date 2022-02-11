@@ -34,5 +34,8 @@ function setStats() {
     myStorage = window.localStorage;
     myStorage.setItem("statistics", JSON.stringify(stats));
 
+    // Let user know and go back to game
     alert("Stats saved")
+    window.location.href = "not-wordle.htm";
+
 }
