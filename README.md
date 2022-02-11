@@ -1,2 +1,2 @@
 # coltonrb.github.io
-It's just Wordle
+It's a site wpw
