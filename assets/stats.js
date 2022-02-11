@@ -6,7 +6,6 @@ function setStats() {
 
     // Store basic stats
     stats["gamesPlayed"] = getInt("gamesPlayed");
-    // stats["winPercentage"] = getInt("winPercentage");
     stats["currentStreak"] = getInt("currentStreak");
     stats["maxStreak"] = getInt("maxStreak");
 
